@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="showcase">
+    <h1>Facebook Downloader</h1>
+    <form method="post" action="{% url 'facebook' %}">
+        {% csrf_token %}
+        {{ facebook_form.as_p }}
+        <button type="submit" name="facebook_submit">Download</button>
+    </form>
+</div>
+{% endblock %}
+

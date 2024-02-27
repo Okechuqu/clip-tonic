@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="showcase">
+    <h1>Twitter Video Downloader</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ twitter_form.as_p }}
+      <button type="submit" name="twitter_submit">Download Video</button>
+    </form>
+  </div>
+{% endblock %}

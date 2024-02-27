@@ -1,0 +1,115 @@
+body {
+  background-color: darkgray;
+  font-family: Helvetica;
+  padding: 0;
+  margin: 0;
+  margin: auto;
+  width: 70%;
+}
+
+nav {
+  width: 65%;
+  margin: auto;
+  padding: 20px;
+  overflow: auto;
+}
+
+nav h1 {
+  margin: 0;
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+li {
+  display: inline;
+  margin: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f6ea09;
+}
+
+.showcase {
+  width: 90%;
+  margin: auto;
+  padding: 80px;
+}
+
+.showcase h1 {
+  padding-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.howto,
+.projects {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+.howto h1,
+.projects h1 {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+input[type="url"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 55%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-select {
+  padding: 10px;
+  width: 20%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffbf00b9;
+  color: #0f0e0e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.quality {
+  background-color: #008000;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ccc;
+  cursor: alias;
+}
+
+button:hover {
+  background-color: #008000;
+}
+
+.footer {
+  padding-top: 50px;
+  border-top: 2px solid #008000;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}

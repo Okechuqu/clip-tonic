@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="showcase">
+    <h1>Youtube Video Downloader</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ youtube_form.video_url }}
+      <label for="quality" class="quality">Quality</label>
+      {{ youtube_form.quality }}
+      <button type="submit" name="youtube_submit" >Download</button>
+    </form>
+  </div>
+
+
+{% endblock %}

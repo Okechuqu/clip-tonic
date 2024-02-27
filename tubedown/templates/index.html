@@ -1,0 +1,33 @@
+{% extends "base.html" %} 
+{% block content %}
+  <div class="showcase">
+    <h1>Youtube Video Downloader</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ youtube_form.video_url }}
+      <label for="quality" class="quality">Quality</label>
+      {{ youtube_form.quality }}
+      <button type="submit" name="youtube_submit" >Download</button>
+    </form>
+  </div>
+
+{% comment %} <div class="showcase">
+  <h1>Video Downloader</h1>
+  <div class="row justify-content-center">
+    <div class="col-2">
+      <button><a href="{% url 'youtube' %}">Youtube</a></button>
+    </div>
+    <div class="col-2">
+      <button><a href="{% url 'twitter' %}">Twitter</a></button>
+    </div>
+    <div class="col-2">
+      <button><a href="{% url 'tiktok' %}">Tiktok</a></button>
+    </div>
+    <div class="col-2">
+      <button><a href="{% url 'instagram' %}">Instagram</a></button>
+    </div>
+    <div class="col-2">
+      <button><a href="{% url 'facebook' %}">Facebook</a></button>
+    </div>
+</div> {% endcomment %}
+{% endblock %}
